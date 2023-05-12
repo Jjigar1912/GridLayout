@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Template</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="navbar">
+      <div
+        class="nav container border-5px-orangered ptb-20 plr-10 grid grid-3-column"
+      >
+        <div class="logo">
+          <h1>collab.</h1>
+        </div>
+        <div class="link" id="navlink">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="btn-end">
+          <button>Get Started</button>
+        </div>
+      </div>
+    </section>
+    <section class="mobile-nav display-none">
+      <div class="container border-5px-orangered">
+        <div class="burgarMenu">
+          <i class="fa fa-bars" onclick="openMenu()"></i>
+        </div>
+        <ul class="mobileMenu display-mobile-none" id="mobileMenu">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+          <li>About</li>
+        </ul>
+      </div>
+    </section>
+    <section class="main">
+      <div class="container border-5px-orangered grid grid-2-column">
+        <div class="content">
+          <h1>Collaborate Like</h1>
+          <h1>Never Before</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga
+            nihil ut sequi aperiam at, reiciendis magnam sapiente quasi
+            perspiciatis.
+          </p>
+        </div>
+        <div class="image">
+          <img src="image-removebg-preview (2).png" />
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container border-5px-orangered ptb-20 plr-20">
+        <img src="instagram.gif" />
+        <img src="twitter.png" />
+        <img src="youtube.png" />
+      </div>
+    </section>
+    <script>
+      let nav = document.getElementById("navlink");
+      let mobileMenu = document.getElementById("mobileMenu");
+      function openMenu() {
+        if (mobileMenu.classList.contains("display-mobile-none")) {
+          mobileMenu.classList.remove("display-mobile-none");
+        } else {
+          mobileMenu.classList.add("display-mobile-none");
+        }
+      }
+    </script>
+  </body>
+</html>
